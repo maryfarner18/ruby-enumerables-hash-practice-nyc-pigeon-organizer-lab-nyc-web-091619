@@ -1,5 +1,8 @@
 def nyc_pigeon_organizer(data)
-  
-  data.each_key
+  result = {}
+  data[:gender][:male].collect do |name|
+    result[name] = {}
+    result[name][:gender] = "male"
+  end
   
 end
