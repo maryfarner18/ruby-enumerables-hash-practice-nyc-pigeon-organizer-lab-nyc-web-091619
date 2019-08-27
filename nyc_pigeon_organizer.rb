@@ -7,7 +7,12 @@ def nyc_pigeon_organizer(data)
         if !result[name] then
           result[name] = {}
         end
+        if !result[name][top_key] then
+          result[name][top_key] = []
+        end
+        
         result[name][top_key].push(low_key)
+        
       end
     end
   end
