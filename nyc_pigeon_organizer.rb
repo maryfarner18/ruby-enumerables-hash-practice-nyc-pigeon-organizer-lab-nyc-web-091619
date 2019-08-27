@@ -12,10 +12,10 @@ def nyc_pigeon_organizer(data)
         end
         
         result[name][top_key].push(low_key.to_s)
-        
+    
       end
     end
   end
-  puts result
+ 
   result
 end
